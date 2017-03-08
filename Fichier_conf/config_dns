@@ -1,1 +1,32 @@
+Installer DNS et le Configurer 
 
+ docker run -d --name=bind -p 53:53 --volume=/srv/docker/bind:/data sameersbn/bind:latest
+
+cd /srv/docker/bind
+ cd  bind
+ cd  etc
+ 
+vim zone.wt12.ephec-ti.be  // J'ai cree un ficheir Zone de DNS au niveau de /srv/docker/bind/bind/etc
+
+
+2) Mettre en ordre le fichier Zone 
+
+
+; ZONE : wt12.ephec-ti.be
+; ------------------------------------------------------------------
+$TTL 7200
+
+@       IN      SOA    ns1.wt12.ephec-ti.be. hostmaster.wt12.ephec-ti.be. (
+                                        2014102001 ; Serial
+                                        14400      ; Refresh
+                                        3600       ; Retry
+                                        1209600    ; Expire - 1 week
+                                        86400 )    ; Minimum
+
+; NAMESERVERS
+
+@                   IN                NS                   ns1.wt12.ephec-ti.be.
+ns1                 IN                A                    l'IP de VPS
+www                 IN                A                    l'IP de VPS
+b2b                 IN                A                    l'IP de VPS
+intranet            IN                A                    l'IP de VPS
