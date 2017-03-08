@@ -1,2 +1,5 @@
 les fichiers conf
 How To Run Nginx in a Docker 
+1) Installer Docker
+ - sudo docker ps -a
+ - docker run --name docker-nginx -p 80:80 nginx  // Dire à quelle port tourne 
