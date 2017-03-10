@@ -14,6 +14,7 @@ vim zone.wt12.ephec-ti.be  // J'ai cree un ficheir Zone de DNS au niveau de /srv
 
 ; ZONE : wt12.ephec-ti.be
 ; ------------------------------------------------------------------
+$ORIGIN wt12.ephec-ti.be.
 $TTL 7200
 
 @       IN      SOA    ns1.wt12.ephec-ti.be. hostmaster.wt12.ephec-ti.be. (
