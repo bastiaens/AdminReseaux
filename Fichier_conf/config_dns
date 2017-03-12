@@ -38,4 +38,4 @@ chmod 755 zone.wt12.ephec-ti.be   // pour rendre le ficheir executable
 ce que j'ai envoye au prof pour activer le DNS 
 wt12.ephec-ti.be. IN NS ns1.wt12.ephec-ti.be.              //envoyé a prof 
 ns1.wt12.ephec-ti.be. IN A "l'IP de VPS" ; ‘glue’ record 
-dsdsd
+// les fichier pas encore complet  //
