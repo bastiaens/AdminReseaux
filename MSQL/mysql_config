@@ -38,8 +38,39 @@ When you start the MySQL image, you can adjust the configuration of the MySQL in
 	
 	
 ////////////// EXEMPLE DE MISE EN PLACE///////////////////
+
 source: http://www.dwmkerr.com/learn-docker-by-building-a-microservice/
 -----------------------------------------------------
 source: http://datacharmer.blogspot.be/2015/10/mysql-docker-operations-part-1-getting.html
 -----------------------------------------------------
 
+/////////////////// NOTRE CONFIG ////////////////////////
+
+installation de l'image mysql server dans un container dédié.
+nom de la database "db", password de root "123", port exposé à l'extérieur "3307",port coté docker "3306" 
+
+    docker run --name db -d -e MYSQL_ROOT_PASSWORD=123 -p 3307:3307 mysql:latest
+
+Exécution de mysql server en ligne de commande à l'intérieur de notre container
+
+    docker exec -it db /bin/bash
+
+Connection à la base de donnée avec le compte root
+
+    mysql -uroot -p123
+
+creation d'une base de donnée intitulée "groupe12"
+
+    create database groupe12;
+
+Utilisation de la database "groupe12"
+
+    use groupe12;
+ 
+Création d'une table "tbtest" contenant nos noms et prénoms
+ 
+    create table tbtest(nom varchar(32), prenom varchar(16));
+
+Insertion de valeurs dans noter db
+
+    insert into tbtest (nom, prenom) values("Bearmani", "Faysal"),("Bastiaens","Olivier"),("Pire","Joseph");
