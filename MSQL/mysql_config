@@ -1,1 +1,45 @@
-ds
+////////////// DOCUMENTATION OFFICIELLE///////////////////
+
+Source: https://hub.docker.com/r/mysql/mysql-server/
+-----------------------------------------------------
+
+CONNXECT FROM ANOTHER CONTAINER
+Connect to MySQL from an Application in Another Docker Container
+	-> docker run --name app-container-name --link my-container-name:mysql -d app-that-uses-mysql
+
+-----------------------------------------------------	
+CONNECT FROM MYSQL COMMAND LINE	
+The following command starts a new process inside an existing MySQL container instance
+ and runs the mysql command line client against your original MySQL server, 
+ allowing you to execute SQL statements against your database:
+	-> docker exec -it my-container-name mysql -uroot -p
+... where my-container-name is the name of your original MySQL Server container. 
+Note that if the main container process (the server) exits, the process started by exec will also exit.
+
+-----------------------------------------------------
+ CUSTOM CREATION SCRIPT
+When you start the MySQL image, you can adjust the configuration of the MySQL instance by passing
+ one or more environment variables on the docker run command line. 
+ Do note that none of the variables below will have any effect if you start the container
+ with a data directory that already contains a database: 
+ any pre-existing database will always be left untouched on container startup.
+ 
+ -----------------------------------------------------
+ PORT FORWARDING
+ Docker allows mapping of ports on the container to ports on the host system by using the -p option. 
+ If you start the container as follows, you can connect to the database by connecting your client to a port on the host machine, in this example port 6603:
+	-> docker run --name my-container-name -p 6603:3306 -d mysql/mysql-server
+	
+ -----------------------------------------------------
+ 
+ PASSING OPTIONS TO THE SERVER
+	-> docker run --name my-container-name -d mysql/mysql-server --character-set-server=utf8 --collation-server=utf8_general_ci
+
+	
+	
+////////////// EXEMPLE DE MISE EN PLACE///////////////////
+source: http://www.dwmkerr.com/learn-docker-by-building-a-microservice/
+-----------------------------------------------------
+source: http://datacharmer.blogspot.be/2015/10/mysql-docker-operations-part-1-getting.html
+-----------------------------------------------------
+
