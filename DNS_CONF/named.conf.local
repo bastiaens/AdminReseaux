@@ -1,4 +1,4 @@
-
+//Déclaration de zone:
 
 zone "wt12.ephec-ti.be" IN {
       type master;
