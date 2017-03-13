@@ -1,0 +1,24 @@
+les fichiers conf
+How To Run Nginx in a Docker 
+1) Installer Docker
+ - sudo docker ps -a
+ - docker run --name docker-nginx -p 80:80 nginx  // Dire à quelle port tourne
+ 2) 
+ 
+- mkdir -p docker-nginx/html
+- cd  docker-nginx/html
+- vim index.html
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <title>Docker nginx Ephec</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello Digital Ephec</h1>
+      <p>Hello EveryBody</p>
+    </div>
+  </body>
+</html>
+:wq  // Pour sortir
+-sudo docker run --name docker-nginx -p 80:80 -d -v /home/faysal/docker-nginx/html:/usr/share/nginx/html nginx
