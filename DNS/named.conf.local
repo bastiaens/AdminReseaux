@@ -1,1 +1,4 @@
-
+zone "wt12.ephec-ti.be" IN {
+      type master;
+      file "zone.wt12.ephec-ti.be";
+}
