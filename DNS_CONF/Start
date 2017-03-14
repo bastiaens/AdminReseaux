@@ -1,1 +1,14 @@
 //fichier pour...
+
+#!/bin/bash
+#Config
+chmod -R 775 /data/bind
+chown -R root:bind /data/bind
+cp /data/bind/etc/* /etc/bind/
+
+#Named
+mkdir -m 0775 -p /var/run/named
+chown root:bind /var/run/named
+touch /var/log/query.log
+chown bind /var/log/query.log
+exec /usr/sbin/named -u bind -g
