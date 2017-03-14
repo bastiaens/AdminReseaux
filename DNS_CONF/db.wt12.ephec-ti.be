@@ -1,3 +1,4 @@
+On a du creé le DNS sans le Volume .
 //db.wt12.ephec-ti.be
 $ttl 38400
 wt12.ephec-ti.be.       IN      SOA     ns1.wt12.ephec-ti.be. HE201228@students.ephec.be. (
