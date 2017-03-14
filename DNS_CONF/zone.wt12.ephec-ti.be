@@ -9,7 +9,7 @@ wt12.ephec-ti.be.      IN      SOA    ns1.wt12.ephec-ti.be. hostmaster.wt12.ephe
                                         604800   
                                         38400 )    
 
-; NAMESERVERS
+;
 
 wt12.ephec-ti.be.                    IN                NS                   ns1.wt12.ephec-ti.be.
 ns1.wt12.ephec-ti.be.                IN                A                    151.80.119.125
