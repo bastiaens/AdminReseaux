@@ -18,3 +18,5 @@ https://www.grafikart.fr/formations/serveur-linux/iptables
 https://docs.docker.com/engine/examples/mongodb/#using-the-mongodb-image
 // PHP sur Ngnix sur Docker 
 http://blog.nicolargo.com/2014/10/infra-lemp-docker.html
+// Apache config 
+https://httpd.apache.org/docs/2.4/fr/mod/core.html#directory
