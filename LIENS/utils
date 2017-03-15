@@ -20,3 +20,4 @@ https://docs.docker.com/engine/examples/mongodb/#using-the-mongodb-image
 http://blog.nicolargo.com/2014/10/infra-lemp-docker.html
 // Apache config 
 https://httpd.apache.org/docs/2.4/fr/mod/core.html#directory
+https://httpd.apache.org/docs/2.2/howto/access.html
