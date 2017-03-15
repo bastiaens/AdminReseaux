@@ -24,3 +24,5 @@ https://httpd.apache.org/docs/2.4/fr/mod/core.html#directory
 https://httpd.apache.org/docs/2.2/howto/access.html
 //Exemples d'utilisations de VirtualHost
 https://httpd.apache.org/docs/2.2/fr/vhosts/examples.html
+//Errordocument dans Apache
+https://httpd.apache.org/docs/2.4/fr/mod/core.html#errordocument
