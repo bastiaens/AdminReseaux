@@ -1,4 +1,5 @@
 //notre Dockrefile
+#tous les commandes qu'on a mis dans le fichier Dockerfile que on l'a crée par nous même.
 FROM ubuntu:15.04
 MAINTAINER HE201228@students.ephec.be
 RUN apt-get update && apt-get upgrade
