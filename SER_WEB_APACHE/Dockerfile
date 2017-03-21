@@ -1,5 +1,5 @@
 //notre Dockrefile
-#tous les commandes qu'on a mis dans le fichier Dockerfile que on l'a crée par nous même.
+#Tous les commandes qu'on a mis dans le fichier Dockerfile que on l'a crée par nous même.
 FROM ubuntu:15.04
 MAINTAINER HE201228@students.ephec.be
 RUN apt-get update && apt-get upgrade
@@ -8,7 +8,7 @@ RUN apt-get install -y apache2
 RUN apt-get install -y php5
 RUN apt-get install -y php5-mysql
 
-#la version de php 5
+#La version de php 5
 RUN a2enmod php5
 RUN a2enmod rewrite
 
@@ -20,9 +20,9 @@ ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_PID_FILE /var/run/apache2.pid
-# sur quel port tourne le Apache 
+# Sur quel port tourne le Apache 
 EXPOSE 80
-#le chemain de notre vps et le chemin de docker 
+#Le chemain de notre vps et le chemin de docker 
 ADD sites/html/ /var/www/html/
 ADD sites/b2b/ /var/www/b2b/
 ADD sites/intranet/ /var/www/intranet/
