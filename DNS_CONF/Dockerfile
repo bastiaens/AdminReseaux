@@ -1,6 +1,7 @@
 #le Dockerfile:
-FROM ubuntu:latest                                                                          //de l'image
-MAINTAINER HE201228@students.ephec.be                                                      //le mail de la personne 'Admin'
+FROM ubuntu:latest                                                                            //de l'image
+#le mail de la personne 'Admin'
+MAINTAINER HE201228@students.ephec.be                                                     //le mail de la personne 'Admin'
 
 RUN apt-get update                                                                        //mettre le mis à jour
 RUN apt-get install -y bind9                                                             //installer bind9
@@ -10,7 +11,7 @@ ENV DATA_DIR=/data/bind
 
 ADD start /start
 RUN chmod 755 /start                                                                  //rendre le fichier excutable
-
+#tourne sur le prot 53 au niveau de UDP et TCP
 EXPOSE 53/udp 53/tcp                                                                  //tourne sur le prot 53 au niveau de UDP et TCP
 VOLUME ["${DATA_DIR}"]         
 CMD ["/start"]                                                                        // excuter
