@@ -1,4 +1,4 @@
-le Dockerfile:
+#le Dockerfile:
 FROM ubuntu:latest                                                                          //de l'image
 MAINTAINER HE201228@students.ephec.be                                                      //le mail de la personne 'Admin'
 
