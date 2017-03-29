@@ -12,6 +12,6 @@ wt12.ephec-ti.be.       IN      SOA     ns1.wt12.ephec-ti.be. HE201228@students.
 wt12.ephec-ti.be.              IN      NS        ns1.wt12.ephec-ti.be.
 
 ns1.wt12.ephec-ti.be.          IN      A         IP de VPS
-www.wt12.ephec-ti.be.          IN      A         151.80.119.125
+www.wt12.ephec-ti.be.          IN      A         IP de VPS
 b2b.wt12.ephec-ti.be.          IN      A         151.80.119.125
 intranet.wt12.ephec-ti.be.     IN      A         151.80.119.125
