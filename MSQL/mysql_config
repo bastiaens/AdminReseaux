@@ -1,13 +1,13 @@
 //////////////// DOCUMENTATION OFFICIELLE/////////////////////
 
 Source: https://hub.docker.com/r/mysql/mysql-server/
------------------------------------------------------
+-------------------------------------------------------
 
 CONNXECT FROM ANOTHER CONTAINER
 Connect to MySQL from an Application in Another Docker Container
 	-> docker run --name app-container-name --link my-container-name:mysql -d app-that-uses-mysql
 
------------------------------------------------------	
+-------------------------------------------------------
 CONNECT FROM MYSQL COMMAND LINE	
 The following command starts a new process inside an existing MySQL container instance
  and runs the mysql command line client against your original MySQL server, 
