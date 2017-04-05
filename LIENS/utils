@@ -1,28 +1,28 @@
 #Divers ressources-liens:
 
-// putty et Clé public etc ..
+// putty et Clé public etc .. //
 http://www.tecmint.com/ssh-passwordless-login-with-putty/
-//Exemple PageWeb
+//Exemple PageWeb //
 https://xpressrazor.wordpress.com/2015/06/22/run-a-simple-webpage-using-docker/
-//GitHub et Docker 
+//GitHub et Docker //
 https://docs.docker.com/docker-hub/github/
-//nginx
+//nginx //
 https://www.grafikart.fr/formations/serveur-linux/nginx-ssl-letsencrypt
-//Installation de nginx
+//Installation de nginx //
 https://www.grafikart.fr/tutoriels/serveur/nginx-php-fpm-522
-//SSL
+//SSL //
 https://www.digicert.com/ssl.htm
-//Iptables
+//Iptables //
 https://www.grafikart.fr/formations/serveur-linux/iptables
-// Lire pour Infos
+// Lire pour Infos //
 https://docs.docker.com/engine/examples/mongodb/#using-the-mongodb-image
-// PHP sur Ngnix sur Docker 
+// PHP sur Ngnix sur Docker // 
 http://blog.nicolargo.com/2014/10/infra-lemp-docker.html
-// Apache config 
+// Apache config //
 https://httpd.apache.org/docs/2.4/fr/mod/core.html#directory
-//Access Control on Apache 
+//Access Control on Apache // 
 https://httpd.apache.org/docs/2.2/howto/access.html
-//Exemples d'utilisations de VirtualHost
+//Exemples d'utilisations de VirtualHost //
 https://httpd.apache.org/docs/2.2/fr/vhosts/examples.html
-//Errordocument dans Apache
+//Errordocument dans Apache //
 https://httpd.apache.org/docs/2.4/fr/mod/core.html#errordocument
