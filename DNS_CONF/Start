@@ -1,5 +1,5 @@
 //fichier pour...
-//
+/////////////
 #!/bin/bash
 #Config
 chmod -R 775 /data/bind
