@@ -15,4 +15,4 @@ www.wt12.ephec-ti.be.          IN      A         IP de VPS
 b2b.wt12.ephec-ti.be.          IN      A         IP de VPS
 intranet.wt12.ephec-ti.be.     IN      A         IP de VPS
 mail.wt12.ephec-ti.be.         IN     MX 5       mail.wt12.ephec-ti.be.
-mail.wt12.ephec-ti.be.         IN      A         IP de VPS
+
