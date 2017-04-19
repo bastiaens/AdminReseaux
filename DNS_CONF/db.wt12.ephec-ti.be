@@ -1,3 +1,4 @@
+# tous apres le "#" est un commentaire
 #On a du creé le DNS sans le Volume .
 #Donc au niveau de racine , on a creé le fichier qui s'appelle "db.wt12.ephec-ti.be"
 #db.wt12.ephec-ti.be
