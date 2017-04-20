@@ -31,6 +31,8 @@ ns1                 IN                A                    l'IP de VPS
 www                 IN                A                    l'IP de VPS
 b2b                 IN                A                    l'IP de VPS
 intranet            IN                A                    l'IP de VPS
+mail.wt12.ephec-ti.be.         IN     MX 5       mail.wt12.ephec-ti.be.
+mail.wt12.ephec-ti.be.         IN      A         IP de VPS
 
 chmod 755 zone.wt12.ephec-ti.be   // pour rendre le ficheir executable
 
