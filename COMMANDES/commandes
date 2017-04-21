@@ -4,6 +4,6 @@ docker build -t dns . ==> pour reconstruir l'image  à partir du Dockerfile, apr
 docker run -it -d -p 53:53/udp -p 53:53/tcp dns  ==> dns c'est le nom de notre image.
 #Demarrer l'image
 sudo docker run -it -d -p 25:25 -p 110:110 -p 465:465 mail5
-
+.......
 
 chmod 755 zone.wt12.ephec-ti.be   // pour rendre le ficheir executable
