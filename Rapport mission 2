@@ -1,0 +1,54 @@
+Rapport Administration système et réseau numéro 2
+Groupe 12 – B. Faysal, B Olivier et P. Joseph
+
+Dans ce second rapport, nous allons présenter le travail que nous avons effectué dans le cadre 
+de notre travail de groupe pour le cours d’administration système et réseau. 
+Nous nous mettrons dans la perspective d’un professionnel s’adressant au client,
+et pour chaque élément du cahier des charges qu’il nous a fournis, 
+nous discuteront du travail que nous avons effectué. 
+
+Nous justifierons d’abord la solution sur nous avons sélectionnée pour chacun des éléments 
+du cahier des charges puis dans la seconde partie de ce rapport, 
+nous discuterons de notre état d’avancement.
+
+Le premier élément que nous devions implémenter était une boite mail
+pour l’ensemble des employés de l’entreprise. Nous avons choisi d’utiliser
+le service de messagerie Postfix, car il est facile à administrer, rapide et évolutif. 
+De plus, il est compatible avec un grand nombre de services qui pourraient s’avérer utiles à l’entreprise. 
+Nous avons donc configuré une image docker que nous avons lancé dans un container dédié à la gestion des mails.
+
+Ensuite, il fallait que chaque employé bénéficie d’une adresse mail. 
+Pour y parvenir, nous avons ajouté les adresses mail des différents employés 
+à nos fichiers de configuration Postfix. 
+Dès lors, chaque employé bénéficiait de son adresse mail propre. 
+
+Après, nous devions créer des adresses mail de service génériques, 
+qui seront redirigée vers le ou les employés responsables du service en question. 
+Nous allons donc ajouter ces adresses mail de service à notre configuration Postfix, 
+puis nous redirigerons les mails envoyés à cette adresse vers
+les adresses mails des employés correspondant. 
+
+Puis, nous devions permettre aux employés de l’entreprise
+de consulter leur courrier électronique à l’aide d’un client mail classique. 
+Pour ce faire, nous avons choisi d’installer Dovecot, 
+car il s’agit d’un client mail lourd, pas d’un webmail, et qui fonctionne avec Postfix
+tout en étant libre de droits. Grâce à celui-ci, 
+nos employés pourront avoir accès à leurs mails ou en envoyer.  
+Par ailleurs, nous devions rendre l’accès à leur client mail
+possible depuis l’extérieur ou l’intérieur de l’entreprise. 
+Bien que nous installerons le client mail sur le poste des employés, 
+ils devront se charger de le faire par eux-mêmes s’il désire accéder à leur boite mail 
+depuis l’extérieur de l’entreprise.
+
+Nous avons présenté nos différents choix de réponses au cahier des charges de notre client, 
+nous allons maintenant revenir sur l’état d’avancement de l’implémentation 
+des différents services que nous avons sélectionnés.
+Pour commencer, nous avouerons d’emblée avoir éprouvé beaucoup de difficultés à mener à bien cette mission.
+En effet, Nous nous sommes heurtés à de nombreuses reprises à des problèmes liés
+à la mauvaise configuration de Postfix et de Dovecot. 
+Si nous avons créé nos configurations et monté nos images à plusieurs reprises, 
+nous ne sommes toujours pas parvenus à rendre notre système opérationnel. 
+Dans l’ordre logique des choses, nous devions tout d’abord configurer notre image Postfix, 
+la monter et en vérifier le bon fonctionnement, avant de se pencher sur Dovecot. 
+Malheureusement, à l’heure actuelle, nous ne sommes toujours pas parvenus à configurer 
+et à valider l’implémentation de notre service mail.
