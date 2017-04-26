@@ -1,0 +1,8 @@
+sur nos vps
+  - créer l'utilisateur vvandn
+  - lui créer un mdp
+  - créer .ssh authorized key dans lequel on met sa clé publique et sa clé publique 
+
+envoyer par mail à Mme VDS
+  - son utilisateur
+  - son mdp
