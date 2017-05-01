@@ -55,3 +55,5 @@ https://github.com/BetterVoice/freeswitch-container/tree/master/sysv
 https://www.siteground.com/tutorials/email/pop3-imap-smtp-ports.htm
 //Expliquation de fichier de config de Postfix //
 http://www.linux-france.org/prj/edu/archinet/systeme/ch35s06.html
+// Information pour postfix/main.cf
+https://postfix.traduc.org/index.php/postconf.5.html
