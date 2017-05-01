@@ -53,3 +53,5 @@ https://github.com/alexisvincent/voip
 https://github.com/BetterVoice/freeswitch-container/tree/master/sysv
 // Pour POP3 SMTP et IMAP //
 https://www.siteground.com/tutorials/email/pop3-imap-smtp-ports.htm
+//Expliquation de fichier de config de Postfix //
+http://www.linux-france.org/prj/edu/archinet/systeme/ch35s06.html
