@@ -8,6 +8,7 @@ mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
 #ceci limite la taille de tout fichier écrit pour livrer localement, y compris les fichiers écrits par des commandes externes
 #Cette limite ne doit pas être inférieure à la taille limite des messages.
 mailbox_size_limit = 0
+#Tables de correspondances contenant tous les noms ou adresses des destinataires locaux
 recipient_delimiter = +
 inet_interfaces = all
 #Il sert à la création des aliases(foufou). Le courrier sera délivré dans la boîte du compte foufou,
