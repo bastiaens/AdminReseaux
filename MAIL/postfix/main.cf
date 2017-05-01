@@ -1,3 +1,20 @@
+#short version config
+myhostname = mail.wt12.ephec-ti.be
+myorigin = /etc/mailname
+mydestination = mail.wt12.ephec-ti.be, wt12.ephec-ti.be, localhost, localhost.localdomain
+relayhost =
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+mailbox_size_limit = 0
+recipient_delimiter = +
+inet_interfaces = all
+#Il sert à la création des aliases(foufou). Le courrier sera délivré dans la boîte du compte foufou,
+#c'est à dire physiquement dans /var/spool/mail/foufou
+#Le fichier"/etc/postfix/aliases"est de type texte. C'est celui-ci que vous modifiez. Après chaque modification du fichier source
+alias_maps = hash:/etc/aliases  
+alias_database = hash:/etc/aliases 
+local_recipient_maps = proxy:unix:passwd.byname $alias_maps
+
+
 #Is in /etc/postfix/main.cf
 #SENDING MAILS
 #The postfix queue for mail that are going to be sent
