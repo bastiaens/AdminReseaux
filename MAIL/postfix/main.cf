@@ -9,7 +9,8 @@ recipient_delimiter = +
 inet_interfaces = all
 #Il sert à la création des aliases(foufou). Le courrier sera délivré dans la boîte du compte foufou,
 #c'est à dire physiquement dans /var/spool/mail/foufou
-#Le fichier"/etc/postfix/aliases"est de type texte. C'est celui-ci que vous modifiez. Après chaque modification du fichier source
+#Le fichier"/etc/postfix/aliases"est de type texte.C'est celui-ci que vous modifiez. Après chaque modification du fichier source
+#qui met à jour le fichier de bases de données "/etc/postfix/aliases.db."
 alias_maps = hash:/etc/aliases  
 alias_database = hash:/etc/aliases 
 local_recipient_maps = proxy:unix:passwd.byname $alias_maps
