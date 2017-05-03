@@ -70,6 +70,7 @@ EXPOSE 5060/udp
 EXPOSE 5060/tcp
 # protocol TCP et UDP
 EXPOSE 9080
+# Real-time Transport Protocol (RTP)
 EXPOSE 16384/udp
 EXPOSE 16385/udp
 EXPOSE 16386/udp
