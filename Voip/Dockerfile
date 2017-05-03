@@ -57,6 +57,7 @@ WORKDIR /
 RUN sed -i -e 's/# MAXFILES=/MAXFILES=/' /usr/sbin/safe_asterisk
 
 # Copy config files to appropriate directory
+# ajoute mes fichiers de conf dans cette chemin
 ADD users.conf /etc/asterisk/users.conf
 ADD sip.conf /etc/asterisk/sip.conf
 ADD extensions.conf /etc/asterisk/extensions.conf
