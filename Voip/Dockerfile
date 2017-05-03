@@ -25,7 +25,7 @@ ENV AUTOBUILD_UNIXTIME 123124
 WORKDIR /tmp
 
 # Download asterisk.
-#Source : https://hub.docker.com/r/qxip/docker-asterisk-hep/~/dockerfile/
+# Source : https://hub.docker.com/r/qxip/docker-asterisk-hep/~/dockerfile/
 RUN git clone -b certified/13.8 --depth 1 https://gerrit.asterisk.org/asterisk
 WORKDIR /tmp/asterisk
 
@@ -33,8 +33,8 @@ WORKDIR /tmp/asterisk
 RUN ./configure --libdir=/usr/lib64 1> /dev/null
 # Remove the native build option
 # from: https://wiki.asterisk.org/wiki/display/AST/Building+and+Installing+Asterisk
-#Using Menuselect to Select Asterisk Options
-#from : https://wiki.asterisk.org/wiki/display/AST/Using+Menuselect+to+Select+Asterisk+Options
+# Using Menuselect to Select Asterisk Options
+# from : https://wiki.asterisk.org/wiki/display/AST/Using+Menuselect+to+Select+Asterisk+Options
 RUN make menuselect.makeopts
 RUN menuselect/menuselect \
   --disable BUILD_NATIVE \
@@ -47,6 +47,7 @@ RUN menuselect/menuselect \
   menuselect.makeopts
 
 # Continue with a standard make.
+# Redirection de la sortie standard (handle de fichier 1) vers / dev / null
 RUN make 1> /dev/null
 RUN make install 1> /dev/null
 RUN make samples 1> /dev/null
