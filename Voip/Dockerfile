@@ -66,6 +66,7 @@ ADD voicemail.conf /etc/asterisk/voicemail.conf
 # Le port 5060 c'est pour l'auth SIP, apres il faut ouvrir les port UDP pour la communication
 #  Other SIP servers may need TCP port 5060 as well 
 # Source : https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+# Source : http://www.adminsub.net/tcp-udp-port-finder/16394
 EXPOSE 5060/udp
 EXPOSE 5060/tcp
 # protocol TCP et UDP
