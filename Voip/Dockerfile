@@ -8,6 +8,7 @@ RUN yum install -y git kernel-headers gcc gcc-c++ cpp ncurses ncurses-devel libx
 
 WORKDIR /tmp
 # pjproject is needed to run asterisk 13
+#Asterisk 12 and 13 dynamically link to pjproject.
 RUN git clone -b pjproject-2.4.5 --depth 1 https://github.com/asterisk/pjproject.git
 
 # Build the project
