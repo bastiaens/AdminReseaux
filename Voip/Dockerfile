@@ -33,6 +33,8 @@ WORKDIR /tmp/asterisk
 RUN ./configure --libdir=/usr/lib64 1> /dev/null
 # Remove the native build option
 # from: https://wiki.asterisk.org/wiki/display/AST/Building+and+Installing+Asterisk
+#Using Menuselect to Select Asterisk Options
+#from : https://wiki.asterisk.org/wiki/display/AST/Using+Menuselect+to+Select+Asterisk+Options
 RUN make menuselect.makeopts
 RUN menuselect/menuselect \
   --disable BUILD_NATIVE \
