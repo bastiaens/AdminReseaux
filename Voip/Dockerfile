@@ -25,6 +25,7 @@ ENV AUTOBUILD_UNIXTIME 123124
 WORKDIR /tmp
 
 # Download asterisk.
+#Source : https://hub.docker.com/r/qxip/docker-asterisk-hep/~/dockerfile/
 RUN git clone -b certified/13.8 --depth 1 https://gerrit.asterisk.org/asterisk
 WORKDIR /tmp/asterisk
 
