@@ -2,7 +2,7 @@
 
 poll 'imap.wt12.ephec-ti.be' proto imap
 	user 'contact@wt12.ephec-ti.be'
-	pass 'f1rstcontact'
+	pass 'contact'
 	is 'contact@wt12.ephec-ti.be'
 	ssl
 
