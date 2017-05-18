@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  mail:
+    image: tvial/docker-mailserver:latest
+    hostname: mail
+    domainname: wt12.ephec-ti.be
+    ports:
+      - "25:25"
+      - "143:143"
+      - "587:587"
+      - "993:993"
+      - "110:110"
+      - "995:995"
+    volumes:
+      - ./mail/ingoing:/var/mail
+      - ./config/:/tmp/docker-mailserver/
+    environment:
+      - ENABLE_SPAMASSASSIN=1 # antispam
+      - ENABLE_CLAMAV=1 # antivirus
+      - ENABLE_FAIL2BAN=0
+      - ENABLE_POSTGREY=1 # filtre par liste grise
+      - ENABLE_FETCHMAIL=1
+      - ENABLE_POP3=1
+      - ONE_DIR=1
+      - DMS_DEBUG=0 # 1: env = dev
+      - SA_TAG=2.0
+      - SA_TAG2=6.31
