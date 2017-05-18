@@ -1,25 +1,25 @@
 # config/fetchmail.cf
 
 poll 'imap.wt12.ephec-ti.be' proto imap
-	user 'contact@wt12.ephec-ti.be'
-	pass 'contact'
-	is 'contact@wt12.ephec-ti.be'
-	ssl
+        user 'contact@wt12.ephec-ti.be'
+        pass 'contact'
+        is 'contact@wt12.ephec-ti.be'
+
 
 poll 'imap.wt12.ephec-ti.be' proto imap
-	user 'b2b@wt12.ephec-ti.be'
-	pass 'woodymarket'
-	is 'b2b@wt12.ephec-ti.be'
-	ssl
+        user 'b2b@wt12.ephec-ti.be'
+        pass 'b2b'
+        is 'b2b@wt12.ephec-ti.be'
+
 
 poll 'imap.wt12.ephec-ti.be' proto imap
-	user 'mathieu.rousseau@wt12.ephec-ti.be'
-	pass 'matiuso'
-	is 'mathieu.rousseau@wt12.ephec-ti.be'
-	ssl
+        user 'olivier.bastiaens@wt12.ephec-ti.be'
+        pass 'ephec'
+        is 'olivier.bastiaens@wt12.ephec-ti.be'
+
 
 poll 'imap.wt12.ephec-ti.be' proto imap
-	user 'nathan.dolinski@wt12.ephec-ti.be'
-	pass '1mot2passe'
-	is 'nathan.dolinski@wt12.ephec-ti.be'
-	ssl
+        user 'faysal.bearmani@wt12.ephec-ti.be'
+        pass 'ephec1'
+        is 'faysal.bearmani@wt12.ephec-ti.be'
+
