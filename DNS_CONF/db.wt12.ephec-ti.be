@@ -19,7 +19,7 @@ wt12.ephec-ti.be.         IN     MX 5       mail.wt12.ephec-ti.be.
 mail.wt12.ephec-ti.be.         IN      A         79.137.39.42
 _sip._udp.wt12.ephec-ti.be.   3600 IN  SRV 0 0 6201 sip.wt12.ephec-ti.be.
 sip                            IN      A         IP de VPS
-owncloud.wt12.ephec-ti.be     IN       A         IP de vps Joseph
+owncloud.wt12.ephec-ti.be.     IN       A         IP de vps Joseph
 
 imap                        IN          CNAME  wt12.ephec-ti.be.
 smtp                        IN          CNAME  wt12.ephec-ti.be.
