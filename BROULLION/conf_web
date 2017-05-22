@@ -1,5 +1,5 @@
 les fichiers conf
-pou finir on utilise apache donc Nginx on n'a plus besoin 
+pou finir on utilise apache donc Nginx on n'a plus besoin. 
 How To Run Nginx in a Docker 
 1) Installer Docker
  - sudo docker ps -a
