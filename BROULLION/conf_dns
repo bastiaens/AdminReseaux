@@ -1,4 +1,4 @@
-Installer DNS et le Configurer 
+;Installer DNS et le Configurer 
 
  docker run -d --name=bind -p 53:53 --volume=/srv/docker/bind:/data sameersbn/bind:latest
 
