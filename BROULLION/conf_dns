@@ -6,7 +6,7 @@ cd /srv/docker/bind
  cd  bind
  cd  etc
  
-vim zone.wt12.ephec-ti.be  // J'ai cree un ficheir Zone de DNS au niveau de /srv/docker/bind/bind/etc
+vim zone.wt12.ephec-ti.be  // J'ai cree un ficheir Zone de DNS au niveau de /srv/docker/bind/bind/etc //
 
 
 2) Mettre en ordre le fichier Zone 
