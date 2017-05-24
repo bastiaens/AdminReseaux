@@ -28,6 +28,7 @@ sudo docker run -it -d -p 9080:80 -p 5060:5060/tcp -p 5060:5060/udp -p 16384:163
 
 docker exec -ti Id_du_process bash
 cd /etc/asterisk
+asterisk -cvvvvvvvvvvvvvvvvvvr
 
 
 ................................................................................................................................
