@@ -1,0 +1,8 @@
+# voici la ligne de commande utilisée pour installer owncloud sur docker
+
+docker run -d -p 80:80 owncloud:latest
+
+# -d pour faire tourner le container en arrière plan
+# -p 80:80 pour mapper les ports du container sur le vps que nous utilisons, et ainsi avoir accès à owncloud en http depuis l'extérieur
+# owncloud:latest car nous utilisons l'image officielle
+# la configuration d'owncloud se fait directement dans le navigateur, une fois connecté en tant qu'administrateur du cloud. Il suffit d'aller dans l'onglet de configuration.
