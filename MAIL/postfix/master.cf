@@ -1,3 +1,4 @@
+#permettant de configurer les services démarrés par POSTFIX, leurs nombres, etc ;
 submission inet n       -       -       -       -       smtpd
   -o syslog_name=postfix/submission
   -o smtpd_tls_wrappermode=no
