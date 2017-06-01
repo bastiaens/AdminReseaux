@@ -2,5 +2,5 @@
 
 zone "wt12.ephec-ti.be" IN {
       type master;
-      file "zone.wt12.ephec-ti.be";
+      file "/etc/bind/db.wt12.ephec-ti.be";
 };
