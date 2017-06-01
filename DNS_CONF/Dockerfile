@@ -1,6 +1,6 @@
 #le Dockerfile:
 FROM ubuntu:latest                                                                            //de l'image
-//le mail de la personne Admin
+#le mail de la personne Admin
 MAINTAINER HE201228@students.ephec.be                                                     
                                                                                                 //mettre le mis à jour
 RUN apt-get update
