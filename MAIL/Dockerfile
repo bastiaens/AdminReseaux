@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER HE201228@students.ephec.be
 
-RUN apt-get -y update
+RUN apt-get -y update 
 RUN apt-get -y upgrade
 RUN apt-get install -y postfix
 RUN apt-get install -y dovecot-common dovecot-imapd dovecot-pop3d
