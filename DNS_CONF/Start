@@ -1,5 +1,5 @@
 //fichier pour//...
-The first time the container is started, configuration data is copied from data container
+#The first time the container is started, configuration data is copied from data container
 #!/bin/bash
 #Config
 chmod -R 775 /data/bind
