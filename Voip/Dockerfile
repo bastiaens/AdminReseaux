@@ -4,6 +4,7 @@ MAINTAINER HE201228@students.ephec.be
 RUN yum update -y
 #to Enable EPEL
 RUN yum install -y epel-release
+#tous ce que il est necessiare ppur installer voip et compilateur 
 RUN yum install -y git kernel-headers gcc gcc-c++ cpp ncurses ncurses-devel libxml2 libxml2-devel sqlite sqlite-devel openssl-devel newt-devel kernel-devel libuuid-devel net-snmp-devel xinetd tar jansson-devel make bzip2 gettext
 
 WORKDIR /tmp
