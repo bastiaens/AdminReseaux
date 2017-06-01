@@ -1,16 +1,20 @@
 #le Dockerfile:
 FROM ubuntu:latest                                                                            //de l'image
 #le mail de la personne 'Admin'
-MAINTAINER HE201228@students.ephec.be                                                     //le mail de la personne 'Admin'
+MAINTAINER HE201228@students.ephec.be                                                     
 
-RUN apt-get update                                                                        //mettre le mis à jour
-RUN apt-get install -y bind9                                                             //installer bind9
-RUN apt-get install -y dnsutils                                                         //installer les utils de DNS 
+#mettre le mis à jour
+RUN apt-get update
+#installer bind9
+RUN apt-get install -y bind9
+#installer les utils de DNS
+RUN apt-get install -y dnsutils                                                          
 
 ENV DATA_DIR=/data/bind       
 
 ADD start /start
-RUN chmod 755 /start                                                                  //rendre le fichier excutable
+#rendre le fichier excutable
+RUN chmod 755 /start                                                                  
 #tourne sur le prot 53 au niveau de UDP et TCP
 EXPOSE 53/udp 53/tcp                                                                  //tourne sur le prot 53 au niveau de UDP et TCP
 VOLUME ["${DATA_DIR}"]         
