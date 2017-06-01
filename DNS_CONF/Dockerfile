@@ -18,7 +18,7 @@ RUN chmod 755 /start
 
 EXPOSE 53/udp 53/tcp                     
 VOLUME ["${DATA_DIR}"]
-#excuter
+#excuter le fichier start
 CMD ["/start"]                                                                        
 
 ADD named.conf.local /etc/bind/named.conf.local
