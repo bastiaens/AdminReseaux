@@ -15,7 +15,7 @@ www.wt12.ephec-ti.be.          IN      A         IP de VPS
 b2b.wt12.ephec-ti.be.          IN      A         IP de VPS
 intranet.wt12.ephec-ti.be.     IN      A         IP de VPS
 wt12.ephec-ti.be.         IN     MX 5       mail.wt12.ephec-ti.be.
-mail.wt12.ephec-ti.be.         IN      A         79.137.39.42
+mail.wt12.ephec-ti.be.         IN      A         Ip de vps d'olivier 
 _sip._udp.wt12.ephec-ti.be.   3600 IN  SRV 0 0 6201 sip.wt12.ephec-ti.be.
 sip                            IN      A         IP de VPS
 owncloud.wt12.ephec-ti.be.     IN       A         IP de vps Joseph
