@@ -1,14 +1,13 @@
-# tous apres le "#" est un commentaire
-#On a du creé le DNS sans le Volume .
-#Donc au niveau de racine , on a creé le fichier qui s'appelle "db.wt12.ephec-ti.be"
-#db.wt12.ephec-ti.be
+;On a du creé le DNS sans le Volume .
+;Donc au niveau de racine , on a creé le fichier qui s'appelle "db.wt12.ephec-ti.be"
+;db.wt12.ephec-ti.be
 $ttl 38400
 wt12.ephec-ti.be.       IN      SOA     ns1.wt12.ephec-ti.be. HE201228@students.ephec.be. (   #Email de Admin#
-                                                                        340000
-                                                                        15000
-                                                                        10000
-                                                                        500000
-                                                                        40000 )
+                                               2001062501 ; serial
+                                               21600      ; refresh after 6 hours
+                                               3600       ; retry after 1 hour
+                                               604800     ; expire after 1 week
+                                               86400 )    ; minimum TTL of 1 day
 
 wt12.ephec-ti.be.              IN      NS        ns1.wt12.ephec-ti.be.
 ns1.wt12.ephec-ti.be.          IN      A         IP de VPS
