@@ -9,7 +9,7 @@ RUN apt-get install -y php5
 RUN apt-get install -y php5-mysql
 
 #La version de php 5
-#a2enmod  is  a  script  that  enables  the  specified module within the apache2 configuration
+#a2enmod  is  a  script  that  enables  the  specified module within the apache2 configuration(pour toi Joseph :p)
 RUN a2enmod php5
 RUN a2enmod rewrite
 
