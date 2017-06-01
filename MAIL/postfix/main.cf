@@ -1,23 +1,36 @@
 #short version config
+
 myhostname = mail.wt12.ephec-ti.be
+#Le paramètre myorigin indique le "vrai" nom du serveur qui apparaîtra dans tout courrier posté sur cette machine. 
+#La valeur par défaut est le nom local de machine, $myhostname, qui a pour valeur par défaut le nom de la machine. 
 myorigin = /etc/mailname
+
+#Le paramètre mydestination indique quels sont les domaines que cette machine déservira localement, au lieu de transmettre à  une autre machine. 
+#Le valeur par défaut la machine elle-même. 
+#Vous pouvez indiquer aucun, un ou plusieurs noms de domaine
 mydestination = mail.wt12.ephec-ti.be, wt12.ephec-ti.be, localhost, localhost.localdomain
-relayhost =
+#Les réseaux autorisés de client sont définis par le paramètre de mynetworks
 mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+
 # zero (no limit)
 #ceci limite la taille de tout fichier écrit pour livrer localement, y compris les fichiers écrits par des commandes externes
 #Cette limite ne doit pas être inférieure à la taille limite des messages.
 mailbox_size_limit = 0
+
 #Le separateur entre noms d'utilisateurs et extensions d'adresse
 recipient_delimiter = +
+
 #Les adresses réseau par lesquelles le système de messagerie reçoit les messages.
 #Par défaut, le logiciel accepte toutes les interfaces de la machine.
 inet_interfaces = all
+
 #Il sert à la création des aliases(foufou). Le courrier sera délivré dans la boîte du compte foufou,
 #c'est à dire physiquement dans /var/spool/mail/foufou
 #Le fichier"/etc/postfix/aliases"est de type texte.C'est celui-ci que vous modifiez. Après chaque modification du fichier source
 #qui met à jour le fichier de bases de données "/etc/postfix/aliases.db."
+
 alias_maps = hash:/etc/aliases  
 alias_database = hash:/etc/aliases
+
 #Tables de correspondances contenant tous les noms ou adresses des destinataires locaux
 local_recipient_maps = proxy:unix:passwd.byname $alias_maps
