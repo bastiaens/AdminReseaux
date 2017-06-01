@@ -10,7 +10,7 @@ RUN apt-get install -y bind9
 RUN apt-get install -y dnsutils                                                          
 
 ENV DATA_DIR=/data/bind       
-
+#on copie le fichier start et on le met dans le container en l'appelant /start
 ADD start /start
 #rendre le fichier excutable
 RUN chmod 755 /start                                                                  
