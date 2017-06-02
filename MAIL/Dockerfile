@@ -7,11 +7,11 @@ RUN apt-get install -y postfix
 RUN apt-get install -y dovecot-common dovecot-imapd dovecot-pop3d
 
 
-EXPOSE 25
+EXPOSE 25 #this is the default SMTP non-encrypted port
 #pop3
 EXPOSE 143 # this is the default IMAP non-encrypted port
 EXPOSE 993 #this is the port you need to use if you want to connect using IMAP securely
-EXPOSE 587 #this is the default SMTP non-encrypted port
+EXPOSE 587 # to ensure new policy and security(TLS)
 
 
 ADD postfix/master.cf /etc/postfix/master.cf
